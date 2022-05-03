@@ -4,7 +4,8 @@ public class gato {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		isCatPlaying(true, 55);
+		isCatPlaying(false, 34);
+		
 	}
 
 	public static void isCatPlaying(boolean estacion, int temperatura) {
