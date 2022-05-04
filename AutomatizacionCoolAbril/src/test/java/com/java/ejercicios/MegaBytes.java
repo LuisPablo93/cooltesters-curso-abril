@@ -3,7 +3,7 @@ package com.java.ejercicios;
 public class MegaBytes {
 
 	public static void main(String[] args) {
-		printMegaBytesAndKiloBytes(5000);
+		printMegaBytesAndKiloBytes(2500);
 	}
 
 	public static void printMegaBytesAndKiloBytes(int kiloBytes) {
