@@ -24,12 +24,14 @@ public class SumaImpar {
 
 	public static void suOdd(int start, int end) {
 		int play = start;
-		int sumRango=0;
+		String sumRango []= new String [start];
+		
 		if (end < start && start < 0 && end < 0) {
 			System.out.println("-1");
 		} else {
 			for (start = play; start <= end; start++) {
-				start=sumRango;
+				isOdd(start);
+			
 				System.out.println(start);
 				start++;
 			}
