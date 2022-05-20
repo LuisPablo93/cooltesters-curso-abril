@@ -1,5 +1,7 @@
 package com.java;
 
+import com.java.access.HelloWorld;
+
 public class Arrays {
 
 	public static void main(String[] args) {
@@ -19,7 +21,12 @@ public class Arrays {
 		String Colores[][][] = new String[1][1][1];
 		Colores[0][0][0] = "Naranja";
 		System.out.println(Colores[0][0][0]);
-
+		
+		HelloWorld hello = new HelloWorld();
+		
+		hello.sayHelloPublic();
+		
+		
 	}
 
 }

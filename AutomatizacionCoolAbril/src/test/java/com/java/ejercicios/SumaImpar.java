@@ -5,38 +5,40 @@ public class SumaImpar {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		isOdd(14);
-		suOdd(1, 10);
+		int suma = sumOdd(-1, 100);
+		System.out.println("La suma de los valores impares es: "+ suma);
 	}
 
-	public static void isOdd(int number) {
-
+	public static boolean isOdd(int number) {
 		if (number < 0) {
-			System.out.println("FALSE");
-			number = 0;
+			return false;
 		} else if (number % 2 > 0) {
-			System.out.println("TRUE");
-			number = 1;
+			return true;
 		} else {
-			System.out.println("FALSE");
-			number = 0;
+			return false;
 		}
 	}
 
-	public static void suOdd(int start, int end) {
-		int play = start;
-		String sumRango []= new String [start];
+	public static int sumOdd(int start, int end) {
 		
-		if (end < start && start < 0 && end < 0) {
-			System.out.println("-1");
-		} else {
-			for (start = play; start <= end; start++) {
-				isOdd(start);
+		
+		if (start > end || start <= 0 || end <= 0) {
+			return -1;
+		} 
+			int sum=0;
+			for (int i=start; i <= end; i++) {
+//				start=sumRango;
+				
+				if(isOdd(i)){
+					
+					sum+=i;		
+				}
+				
+			}return sum;
 			
-				System.out.println(start);
-				start++;
-			}
 
 		}
+		
 
 	}
-}
+
