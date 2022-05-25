@@ -378,7 +378,11 @@ public class LoginTests {
 	}
 
 	@Test
+<<<<<<< HEAD
+	public void tc006() throws InterruptedException {
+=======
 	public void tc006() {
+>>>>>>> branch 'master' of https://github.com/LuisPablo93/cooltesters-curso-abril
 
 // Reglas antes de empezar el desarrollo
 

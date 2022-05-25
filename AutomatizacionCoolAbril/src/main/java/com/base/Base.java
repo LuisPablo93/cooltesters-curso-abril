@@ -18,6 +18,42 @@ public class Base {
 		this.driver = driver;
 	}
 
+<<<<<<< HEAD
+	public WebDriver setupChromeDriver() {
+		ChromeOptions chromeOpt = new ChromeOptions();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver(chromeOpt);
+		return driver;
+	}
+
+	public void LaunchBrowser(String url) {
+		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
+		driver.manage().window().maximize();
+		try {
+			driver.get(url);
+			driver.manage().window().maximize();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void type(By locator, String inputText) {
+		driver.findElement(locator).sendKeys(inputText);
+
+	}
+
+	public void click(By locator) {
+		driver.findElement(locator).click();
+	}
+
+	public boolean isDisplayed(By locator) {
+		return driver.findElement(locator).isDisplayed();
+
+	}
+
+	public String getText(By locator) {
+		return driver.findElement(locator).getText();
+=======
 	public WebDriver ChromeDriver() {
 		ChromeOptions chromeOpt = new ChromeOptions();
 		WebDriverManager.chromedriver().setup();
@@ -47,6 +83,7 @@ public class Base {
 
 	public boolean isDisplayed(By locator) {
 		return driver.findElement(locator).isDisplayed();
+>>>>>>> branch 'master' of https://github.com/LuisPablo93/cooltesters-curso-abril
 
 	}
 
